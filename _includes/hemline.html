@@ -11,6 +11,12 @@
 <script src="{{ '/assets/js/katex.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 {% endif %}
 
+{% if site.enable_mathjax %}
+<!-- Load MathJax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
+
+
 {% if site.enable_anchorjs %}
 <!-- Load Anchor JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/{{ site.anchorjs_version }}/anchor.min.js"></script>
