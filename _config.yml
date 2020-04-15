@@ -4,7 +4,7 @@
 name: Sylvain Chevallier
 email: sylvain.chevallier@uvsq.fr
 description: > # this means to ignore newlines until "url:"
-  Associate professor, [LISV](http://www.lisv.uvsq.fr/) - [University of Versailles](http://www.uvsq.fr/)
+  Associate professor HDR, [LISV](http://www.lisv.uvsq.fr/) - [University of Versailles](http://www.uvsq.fr/)
   Teaching at [IUT de Velizy](http://www.iut-velizy.uvsq.fr/) and [Universite Paris-Saclay](https://www.universite-paris-saclay.fr/)
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
