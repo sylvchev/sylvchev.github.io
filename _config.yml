@@ -29,7 +29,7 @@ google_analytics: UA-15576823-2 # out your google-analytics code
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: IndentFirst
+blog_name: /dev/urandom
 blog_description: Sylvain's blog
 
 # Pagination
