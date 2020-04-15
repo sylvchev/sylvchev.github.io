@@ -47,7 +47,7 @@ Most of the classical machine learning algorithms are working only in Euclidean 
 
 <div class="img_row">
     <img class="col two left" src="{{ site.baseurl }}/assets/img/MDRM.png" alt="" title="MDM classifier"/>
-    <img class="col one right" src="{{ site.baseurl }}/assets/img/tangentspace.png" alt="" title=« Riemannian and Euclidean distance"/>
+    <img class="col one right" src="{{ site.baseurl }}/assets/img/tangentspace.png" alt="" title="Riemannian and Euclidean distance"/>
 </div>
 <div class="col three caption">
     Riemannian classifiers: MDM on the left and tangent space on the right.
@@ -63,11 +63,16 @@ These classifiers yield state-of-the-art results for BCI [1], [2]
 
 In order to compare existing algorithms, a framework called [MOABB](https://github.com/ NeuroTechX/moabb) allows to download EEG datasets and to evaluate existing classifiers in a few lines of Python. Testing MDM classifier on data from the BCI Competition IV and from paper from Zhou _et al_ is simple as:
 
-    datasets = [BNCI2014001(), Zhou2016()]
-    paradigm = LeftRightImagery()
-	 pipeline = {'MDM': make_pipeline(Covariances('oas'), MDM(metric='riemann'))}
-    evaluation = WithinSessionEvaluation(paradigm=paradigm, datasets=datasets, overwrite=True)
-    results = evaluation.process(pipelines) 
+{% highlight python %}
+
+datasets = [BNCI2014001(), Zhou2016()]
+paradigm = LeftRightImagery()
+pipeline = {'MDM': make_pipeline(Covariances('oas'), MDM(metric='riemann'))}
+evaluation = WithinSessionEvaluation(paradigm=paradigm, datasets=datasets, overwrite=True)
+results = evaluation.process(pipelines) 
+
+{% endhighlight %}
+
 
 More complete examples are available as notebooks from the [MOABB workshop in Graz 2019](https://github.com/plcrodrigues/Workshop-MOABB-BCI-Graz-2019).
 
@@ -80,7 +85,8 @@ More complete examples are available as notebooks from the [MOABB workshop in Gr
     Y. Hamam, "Online SSVEP-based BCI using Riemannian geometry", Neurocomputing, 
     vol. 191, p. 55-68, 2016.
 
-[3] S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
+[3] S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian
+    distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
 
 
 
