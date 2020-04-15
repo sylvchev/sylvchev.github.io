@@ -27,7 +27,7 @@ Classical machine learning pipeline involves 3 steps:
 All efficient approaches try to find a spatial filter $$ W_d \in \mathbb{R}^{C \times D}$$, where $$C$$ is the number of channels and $$D \leqslant C$$ such that $$W^TX$$ maximizes the SNR.
 The ideas are twofold: build in a surrogate space, where the channels are reweighted to enhance the signal of interest, and reduce the dimensionality as the EEG signal is highly correlated.
 But these approaches are efficient only on clean datasets and with a lengthy calibration phase, that is prone to overfitting.
-Still, these approaches fail for *20% of the subjects* as it could be seen from the results of international competition.
+Still, these approaches fail for **20% of the subjects** as it could be seen from the results of international competition.
 
 Covariance-based methods are nested in all the above-mentioned approaches for processing EEG signal in BCI.
 While covariance matrices have a specific non-flat geometry, most of the common approaches rely on Euclidean techniques.
@@ -38,7 +38,7 @@ While covariance matrices have a specific non-flat geometry, most of the common 
 Covariance matrices are as elements of the manifold of symmetric and positive-definite matrices : $$\mathcal{M}_C = \left\{ \Sigma \in \mathbb{R}^{C \times C} : \Sigma = \Sigma^T \text{and} x^T \Sigma x > 0, \forall x \in \mathbb{R}^C \backslash 0 \right\}$$. Combined with a proper distance, such as the affine-invariant distance $$d(\Sigma_1, \Sigma_2) = || \log(\Sigma_1^{-\frac{1}{2}} \Sigma_2 \Sigma_1^{-\frac{1}{2}}) ||_F $$,	this defines a Riemannian manifold.
 
 From the BCI perspective, the most interesting points regarding this Riemannian geometry are the invariance provided by the chosen distance.
-There is many possible choices described in the literature [3], each one coming with specific invariances.
+There is many possible choices described in the literature [1], each one coming with specific invariances.
 The affine-invariant distance (or Fisher metric) endows the distance with the invariance to affine transforms, as suggested by its name : $$ d(\Sigma_1, \Sigma_2) = d(W^T \Sigma_1 W, W^T \Sigma_2 W)$$.
 This means that when measuring the distance between two EEG signals (seen as covariance matrices), this distance is not sensitive to any reweighting of channels.
 It is like always working with the optimal spatial filter $$W$$!
@@ -53,7 +53,7 @@ Most of the classical machine learning algorithms are working only in Euclidean 
     Riemannian classifiers: MDM on the left and tangent space on the right.
 </div>
 
-These classifiers yield state-of-the-art results for BCI [1], [2]
+These classifiers yield state-of-the-art results for BCI [2], [3]
 
 | P300 - Brain Invaders | SSVEP - Exoskeleton | MI - BCI IV 2a |
 | --- | --- | --- |
@@ -78,15 +78,16 @@ More complete examples are available as notebooks from the [MOABB workshop in Gr
 
 ### References
 
-[1] M. Congedo, A. Barachant, A. Andreev ,"A New generation of Brain-Computer 
+[1]  S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian
+    distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
+
+[2] M. Congedo, A. Barachant, A. Andreev ,"A New generation of Brain-Computer 
     Interface Based on Riemannian Geometry", arXiv: 1310.8115, 2013.
 
-[2] E. K. Kalunga, S. Chevallier, Q. Barthélemy, K. Djouani, E. Monacelli, 
+[3] E. K. Kalunga, S. Chevallier, Q. Barthélemy, K. Djouani, E. Monacelli, 
     Y. Hamam, "Online SSVEP-based BCI using Riemannian geometry", Neurocomputing, 
     vol. 191, p. 55-68, 2016.
 
-[3] S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian
-    distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
 
 
 
