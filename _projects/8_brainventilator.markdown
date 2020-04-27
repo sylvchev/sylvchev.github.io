@@ -5,7 +5,7 @@ description:
 img: /assets/img/PER-PPI.png
 ---
 
-This page will explain the ongoing works on brain-ventilator interface.
+This page will explain the ongoing work on brain-ventilator interface.
 
 <div class="img_row">
     <img class="col one left" src="{{ site.baseurl }}/assets/img/PER-PPI.jpg" alt="" title="respiratory evoked potentials"/>
