@@ -5,7 +5,7 @@ description: acquisition and real-time processing for biosignals
 img: /assets/img/timeflux-visu.png
 ---
 
-This page will explain the ongoing works on timeflux
+This page will explain the ongoing work on timeflux
 
 <div class="img_row">
     <img class="col one left" src="{{ site.baseurl }}/assets/img/logo-timeflux.jpg" alt="" title="TimeFlux logo"/>
