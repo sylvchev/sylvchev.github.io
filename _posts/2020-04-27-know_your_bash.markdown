@@ -2,7 +2,7 @@
 layout: post
 title: Know your Bash
 date: 2020-04-27 17:16:00
-description: Advanced bash starting guide
+description: tricks and idioms
 ---
 
 ### Bash introduction
