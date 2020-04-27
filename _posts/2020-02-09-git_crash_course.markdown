@@ -31,7 +31,10 @@ For Windows user :
 
 ### Git log 
 
-TODO
+- Tree view of your repro: `git log --graph --date-order`, or add in your `~/.gitconfig` an alias section with
+  [alias]
+     lgr = log --graph --date-order --pretty=format:'%Cblue%h %Cgreen%ci %Cred%an, %Cblue%m %Creset%s %Cred%d'
+- Display diff with from 2 commits ago: `git HEAD~2 HEAD` or `git @~2` as HEAD is implicit
 
 ### Undoing things 
 
@@ -98,6 +101,7 @@ TODO
 ### Links 
 
 - [ProGit](http://git-scm.com/book/en/), a complete book, this is a must-read.
+- [Learn Git Branching](https://learngitbranching.js.org/), incredible tutorial, with realistic environment in your browser!
 - [Git tutorial for scientist](http://nyuccl.org/pages/GitTutorial/), nice figures and very useful
 - GitHub help on [how to fork a repo](https://help.github.com/articles/fork-a-repo) and [syncing a fork](https://help.github.com/articles/syncing-a-fork)
 - [Git-game v2](https://github.com/git-game/git-game-v2), a game to learn command line git.
