@@ -50,7 +50,8 @@ See [Emacs wiki](https://www.emacswiki.org/emacs/PythonProgrammingInEmacs)
 
 ### Relevant .emacs snippet
 
-```
+{% highlight emacs %}
+
 (setenv "WORKON_HOME" "/home/sylchev/anaconda3/envs")
 (pyvenv-mode 1)
 (add-hook 'python-mode-hook 'anaconda-mode)
@@ -67,4 +68,5 @@ See [Emacs wiki](https://www.emacswiki.org/emacs/PythonProgrammingInEmacs)
 (when (load "flycheck" t t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
   (add-hook 'elpy-mode-hook 'flycheck-mode))
-```
+
+{% endhighlight %}
