@@ -14,7 +14,7 @@ social: false
 ### Short version
 
 Current situation:
-- Associate professor (Maître de conférence), HDR, at IUT de Vélizy, Université de Versailles St Quentin since 2011
+- Associate professor (Maître de conférences), HDR, at IUT de Vélizy, Université de Versailles St Quentin since 2011
 - Member of [LISV lab](http://www.lisv.uvsq.fr/), team Assistance and Interfaces
 - Academic leave for 1 year (CRCT 2 semesters), granted by CNU
 - PEDR holder since 2016
