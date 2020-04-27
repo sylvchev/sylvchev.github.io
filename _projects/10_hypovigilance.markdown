@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Timeflux
-description: acquisition and real-time processing for biosignals
+title: Hypovigilance
+description: Sleep detection during driving
 img: /assets/img/hypovigi.png
 ---
 
