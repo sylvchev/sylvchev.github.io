@@ -15,7 +15,7 @@ description: Advanced bash starting guide
 
 - [spell check](https://www.shellcheck.net/) your scripts
 - [Beautiful explanations](https://explainshell.com/) on shell commands
-- [Bashtop](https://github.com/aristocratos/bashtop), the best ressource monitor
+- [Bashtop](https://github.com/aristocratos/bashtop), the best resource monitor
 
 ### Bash tricks
 

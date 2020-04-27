@@ -7,8 +7,8 @@ img: /assets/img/timeflux-visu.png
 
 This page will explain the ongoing works on timeflux
 
-![](/assets/img/logo-timeflux.png)
-
-![](/assets/img/timeflux-visu.png)
-
-![](/assets/img/timeflux-pierre.jpg)
+<div class="img_row">
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/logo-timeflux.jpg" alt="" title="TimeFlux logo"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/timeflux-visu.jpg" alt="" title="Visualization in TimeFlux"/>
+    <img class="col one left" src="{{ site.baseurl }}/assets/img/timeflux-pierre.jpg" alt="" title="TimeFlux workshop"/>
+</div>

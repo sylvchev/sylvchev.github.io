@@ -9,7 +9,7 @@ img: /assets/img/openscience-ERC.png
 
 Les diapositives du cours sont disponibles sur le [Moodle](https://moodle.uvsq.fr/moodle/course/view.php?id=3450)
 
-### Python pour la sciences des données
+### Python pour la science des données
 
 Les notebooks Python sont disponibles sur ma page [GitHub](https://github.com/sylvchev/coursMLpython)
 
@@ -36,7 +36,7 @@ Pour rendre vos rapports sur Authorea, vous pouvez soit m'envoyer le pdf soit le
 - Pour récupérer le pdf, il faut passer en mode édition sur votre rapport (cliquer sur EDIT en haut à gauche si vous n'êtes pas en mode édition), puis cliquer sur le menu "Document" en haut à gauche, "Export" puis "PDF Document".
 - Pour publier votre rapport sur le groupe RAM, il faut passer en mode édition sur votre rapport (cliquer sur EDIT en haut à gauche si vous n'êtes pas en mode édition), puis cliquer sur le menu "Document" en haut à gauche, "Publish" puis "Post to a group". Vous pouvez autoriser les membres du groupe à commenter (cliquer sur "comment").
 
-### Evaluation et calendrier
+### Évaluation et calendrier
 
 Vous devrez m'envoyer votre rapport et votre présentation avant le 4 novembre midi, par mail. Pour écrire votre rapport, vous pourrez utiliser le canevas disponible ici ou disponible en anglais ici . Vous pouvez lire cet article qui explique comme écrire correctement un article scientifique, cela pourra vous aider à mieux chercher les informations dans vos sources bibliographiques.
 

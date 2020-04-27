@@ -101,7 +101,7 @@ For Windows user :
 ### Links 
 
 - [ProGit](http://git-scm.com/book/en/), a complete book, this is a must-read.
-- [Learn Git Branching](https://learngitbranching.js.org/), incredible tutorial, with realistic environment in your browser!
+- [Learn Git Branching](https://learngitbranching.js.org/), an incredible tutorial, with realistic environment in your browser!
 - [Git tutorial for scientist](http://nyuccl.org/pages/GitTutorial/), nice figures and very useful
 - GitHub help on [how to fork a repo](https://help.github.com/articles/fork-a-repo) and [syncing a fork](https://help.github.com/articles/syncing-a-fork)
 - [Git-game v2](https://github.com/git-game/git-game-v2), a game to learn command line git.

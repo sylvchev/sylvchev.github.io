@@ -12,7 +12,7 @@ __Windows__
 - Avec MikTex, vous pouvez utiliser votre éditeur de texte favori et compiler en ligne de commande
 
 __Linux__
-- La distributon latex de référence est Texlive, elle est installé par défaut sur Ubuntu et sur bon nombre de distribution
+- La distribution LaTeX de référence est Texlive, elle est installée par défaut sur Ubuntu et sur bon nombre de distribution
 - Un bon éditeur est [Kile](https://kde.org/applications/office/org.kde.kile) sur Kde, pour Ubuntu/Gnome il y a [Latexila](http://projects.gnome.org/latexila/).
 
 __Mac__
@@ -21,7 +21,7 @@ __Mac__
 - Un bon résumé est [disponible ici](http://macdevcenter.com/pub/a/mac/2004/02/03/latex.html)
 
 ### Pour commencer 
- Vous pouvez copier coller ces quelques lignes et compléter les blancs comme bon vous semble :
+ Vous pouvez copier-coller ces quelques lignes et compléter les blancs comme bon vous semble :
 
 {% highlight latex %}
 
@@ -59,7 +59,7 @@ votre texte
 
 ### Canevas latex pour une thèse
 
-Voici une archive qui contient un style possible pour la thèse, il provient d'une longue lignée de thèsards et n'attend que vous pour être amélioré et diffusé plus largement. Vous pouvez le télécharger ici: <https://github.com/sylvchev/latex-template-uvsq-saclay>
+Voici une archive qui contient un style possible pour la thèse, qui n'attend que vous pour être amélioré et diffusé plus largement. Vous pouvez le télécharger ici: <https://github.com/sylvchev/latex-template-uvsq-saclay>
 
 ### Canevas Beamer pour une présentation 
 
@@ -84,7 +84,7 @@ __Some useful links__
 
 Il est possible de convertir des documents LaTeX en documents office ou en HTML.
 Malheureusement, ces convertisseurs sont assez sensibles (des fois ils ne fonctionnent pas) et peuvent donner des mises en formes très différentes. Je ne sais pas comment ils fonctionnent pour les maths et si les équations sont bien rendues. J’ai eu pas mal de soucis à les utiliser, je viens d’essayer de convertir un document LaTeX avec des équations que j’utilise à l’IUT mais je n’ai pas réussi à le convertir. La page du convertisseur est ici :
-<https://www.tug.org/tex4ht/> avec des explications relativement claire ici <https://github.com/michal-h21/helpers4ht/wiki/tex4ht-tutorial>
+<https://www.tug.org/tex4ht/> avec des explications relativement claires ici <https://github.com/michal-h21/helpers4ht/wiki/tex4ht-tutorial>
 
 Une fois qu’il est installé, il est possible de convertir le document latex avec la commande :
 
