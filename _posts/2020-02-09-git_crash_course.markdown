@@ -34,7 +34,9 @@ For Windows user :
 - Tree view of your repro: `git log --graph --date-order`, or add in your `~/.gitconfig` an alias section with
   [alias]
      lgr = log --graph --date-order --pretty=format:'%Cblue%h %Cgreen%ci %Cred%an, %Cblue%m %Creset%s %Cred%d'
-- Display diff with from 2 commits ago: `git HEAD~2 HEAD` or `git @~2` as HEAD is implicit
+- Display diff with from 2 commits ago: `git diff HEAD~2 HEAD` or `git diff @~2` as HEAD is implicit
+- List commit for a specific file: `git log --abbrev-commit myfile`
+- Coming back in time : `git checkout commit-hash`, detaching HEAD. You could come back to the topmost commit of your branch with `git switch -`
 
 ### Undoing things 
 
@@ -49,9 +51,10 @@ For Windows user :
 
 ### Tagging
 
-- Show the tag: `git tag`
+- Show existing tags: `git tag`
 - Add a new tag: `git tag -a tagname -m "Message"`
-- Sharing one tag: `git push origin [tagname]` or all tags:`git push origin --tags`
+- Sharing one tag: `git push origin [tagname]` or all tags: `git push origin --tags`
+- Get tags from remote: `git fetch --all --tags --prune` and checkout to the desired tags: `git checkout tags/<tag_name> -b <branch_name>`
 
 ### Tips and tricks 
 
