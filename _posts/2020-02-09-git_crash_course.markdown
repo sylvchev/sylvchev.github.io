@@ -21,7 +21,7 @@ For Windows user :
 - Tracked files can be __unmodified__, __modified__, or __staged__. 
 - Know the state with: `git status`
 - Add new file or staged modified files: `git add file`
-- View diff with: `git diff` **/!\** It the diff between modified and staged files
+- View diff with: `git diff` :warning: It shows the diff between modified and staged files
 - View diff scheduled for commit with: `git diff --cached`
 - Ignore files by creating a `.gitignore`
 - Commit wih: `git commit`
@@ -56,14 +56,6 @@ For Windows user :
 - Sharing one tag: `git push origin [tagname]` or all tags: `git push origin --tags`
 - Get tags from remote: `git fetch --all --tags --prune` and checkout to the desired tags: `git checkout tags/<tag_name> -b <branch_name>`
 
-### Tips and tricks 
-
-- Use bash completion for git : download <https://github.com/git/git/blob/master/contrib/completion/git-completion.bash> and source it : `source ~/git-completion.bash`
-- Use global aliases : `git config --global alias.co checkout`, `git config --global alias.ci commit` and `git config --global alias.st status`
-- Exporting to zip : `git archive --format zip --output /full/path/to/zipfile.zip master` or `git archive master | zip > myarchive.zip`
-- Remove file from git but keep it on the disk : `git rm --cached file1.txt`
-- my .gitconfig file is available on [gist](https://gist.github.com/sylvchev/14283580f189e318aabefb566248ad86)
-
 
 ### Branching and merging 
 
@@ -96,8 +88,14 @@ For Windows user :
 - Rebase branch C, branched from B (but independent from it), on branch A:  `git rebase --onto A B C`
 - **Do not rebase commits that you have pushed to a public repository.**
 
-### Distributed Git 
+### Tips and tricks 
 
+- Use bash completion for git : use zsh, or else download <https://github.com/git/git/blob/master/contrib/completion/git-completion.bash> and source it : `source ~/git-completion.bash`.
+- Use global aliases : `git config --global alias.co checkout`, `git config --global alias.ci commit` and `git config --global alias.st status`
+- Exporting to zip : `git archive --format zip --output /full/path/to/zipfile.zip master` or `git archive master | zip > myarchive.zip`
+- Remove file from git but keep it on the disk : `git rm --cached file1.txt`
+- my .gitconfig file is available on [gist](https://gist.github.com/sylvchev/14283580f189e318aabefb566248ad86)
+- To store credential in https: `git config credential.helper store`, then your command, like `git pull`, and `git config --global credential.helper 'cache --timeout=6400'`
 - Check for whitespace commit: `git diff --check`
 
 
