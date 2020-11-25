@@ -529,3 +529,12 @@ sup { position: relative; vertical-align: middle; top: -0.9ex; }
 h1, h2, h3, h4, h5, h6 { font-weight: 100; }
 
 div.equation { margin: 0.5rem 0; }
+
+/* Color code for publications */
+
+pbook, p .pbook {font-size: 1.5em; color: #6f6f6e; }
+
+pjournal { font-size: 1.3em; color: #0092bb; }
+p .pjournal { font-size: 1.3em; color: #0092bb; }
+
+pconf, p .pconf { font-size: 1.3em; color: #77ad1c; }
