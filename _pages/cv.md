@@ -27,8 +27,11 @@ Past positions:
 - Moniteur (french TA) in [Computer Science department of IUT Orsay](http://www.iut-orsay.u-psud.fr/).
 
 PhD supervision:
-- Amina Alaoui-Belghiti, industrial grant (CIFRE) between UVSQ and Nexeya-Hensoldt, _"Analysis and fault prediction: toward an automatic and predictive maintenance"_, 70% supervision, started in July 2018
-- Jinan Charafeddine, joint supervision UVSQ and Université Libanaise (Liban), _"Caractérisation et Intégration des signaux musculaires pour le pilotage d’un exosquelette des membres inférieurs lors d’activités locomotrices"_, 30% supervision, defense postponed in May 2020
+- Sayu Yamamoto, ANR UDOPIA-DATAIA grant at Université Paris-Saclay, _"Similarity-based Classification with riemannian methods for high dimensional EEG"_, 50% supervision with Florian Yger, will start in March 2021
+- Isabelle Hoxa, ministerial grant (MESRI) in Université Paris-Saclay,_"Study of EEG anticipatory signals linked to perceptual decision making"_, co-supervision with Michel-Ange Amorim and Arnaud Delorme, started in October 2020
+  on 
+- Amina Alaoui-Belghiti, industrial grant (CIFRE) between UVSQ and Nexeya-Hensoldt, _"Analysis and fault prediction: toward an automatic and predictive maintenance"_, 100% supervision, started in July 2018
+- Jinan Charafeddine, joint supervision UVSQ and Université Libanaise (Liban), _"Caractérisation et Intégration des signaux musculaires pour le pilotage d’un exosquelette des membres inférieurs lors d’activités locomotrices"_, 30% supervision, defense postponed in January 2021
 - Emmanuel Kalunga, joint supervision between UVSQ and Tshwane University of Technology (South Africa), _"Toward User-adapted Brain-Computer Interfaces : Robust Interactions and Machine Learning based on Riemannian Geometry"_, 50% supervision, defended in August 2017 (3,5 years)
 - Hugo Martin, industrial grant (CIFRE) between UVSQ and Bouygues Construction International, _"Building Information Modeling: manipulate and visualize professional knowledge"_, 70% supervision, defended in December 2016 (3,5 years)
 
