@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Master RAM
-description: Machine Learning 
+description: Cours donné de 2013 à 2022
 img: /assets/img/openscience-ERC.png
 ---
+
+:warning: Cours donné à l'UVSQ jusqu'en 2021
 
 ### Introduction au machine learning
 

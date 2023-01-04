@@ -3,8 +3,9 @@ layout: page
 title: INM2101
 description: Architecture matérielle 
 img: /assets/img/shenzhenio.jpg
-redirect: https://moodle.uvsq.fr/moodle/course/view.php?id=314
 ---
+
+:warning: Cours donné à l'UVSQ jusqu'en 2021
 
 Cours d'architecture des ordinateurs
 

@@ -71,6 +71,7 @@ For Windows user :
 - Synchronize with remote: `git fetch (remote)`, e.g. `git fetch origin`
 - Push the branch on remote: `git push (remote) (branch)`, or `git push (remote) (localBranch:remoteBranch)`
 - After a `git fetch origin` new branches are available that can be merge into current branch with `git merge origin/(branch)`, it is also possible to start a local branch with the same name `git checkout -b (branch) (remote)/(branch)` or `git checkout --track (remote)/(branch)`
+- If you forgot to track a remote branch on your local branch, you could use `git branch -u remote/branch` to follow the remote branch.
 - Delete a remote branch: `git push [remotename] :[branch]`
 
 ### GitHub
@@ -84,9 +85,10 @@ For Windows user :
 ### Rebasing 
 
 - Rebase a branch on another: `git rebase [basebranch] [topicbranch]`, then `git checkout basebranch` and `git merge topicbranch`, finally `git branch -d topicbranch`
-- Rebase a PR branch on newly pushed master: `git checkout mybranch`, `git rebase master-upstream`, `git merge`, `git commit`
+- Rebase a PR branch on newly pushed master: `git checkout mybranch`, `git rebase master-upstream`, `git merge`, `git commit`, or more simply `git checkout mybranch`, `git rebase upstream/master`,` git push -f origin mybranch`
 - Rebase branch C, branched from B (but independent from it), on branch A:  `git rebase --onto A B C`
-- **Do not rebase commits that you have pushed to a public repository.**
+- **Do not rebase commits that you have pushed to a public repository if your are on a public branch**
+
 
 ### Tips and tricks 
 

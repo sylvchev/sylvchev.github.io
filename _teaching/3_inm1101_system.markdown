@@ -3,8 +3,9 @@ layout: page
 title: INM1101 
 description: Introduction aux systèmes informatiques 
 img: /assets/img/windows-ai-closecut.png
-redirect: https://moodle.uvsq.fr/moodle/course/view.php?id=383
 ---
+
+:warning: Cours donné à l'UVSQ jusqu'en 2021
 
 Cours d'introductions au systèmes informatiques
 
