@@ -16,7 +16,7 @@ social: false
 Current situation:
 - Full professor (professeur des Universités), Université Paris-Saclay, since 2022
 - Member of [LISN-CNRS](https://www.lisn.upsaclay.fr), joint INRIA team [AO/TAU](https://team.inria.fr/tau2/)
-- Teching at the Computer Science departement of [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/)
+- Teaching at the Computer Science departement of [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/)
 - PEDR holder since 2016
 
 Past positions:
@@ -31,7 +31,8 @@ Past positions:
 - Moniteur (french TA) in [Computer Science Department of IUT Orsay](http://www.iut-orsay.u-psud.fr/).
 
 PhD supervision:
-- Romain Lloria, DATAIA grant at Université Paris-Saclay, _"Geometrical Robust Blind Source Separation: Application to EEG classification"_, 30% supervision with Frederic Pascal (PU, CentralSupelec-UPSaclay) and Florent Bouchard (CR CNRS, L2S), started in November 2022
+- Bruno Aristimunha Pinto, cotutella with UFABC (Brazil), _"Deep learning for electroencephalography"_, 30% co-supervision with Marie-Constance Corsi (Inria, Paris Brain Institute) and Raphael Y. de Camargo (UFABC, Brazil), started in october 2023
+- Apolline Mellot, Inria grant, _"Statiscal learning and domain adaption for enhancing the mesurement of cerebral health from M/EEG signal"_, 50% supervision with Alexandre Gramfort (Meta) and Denis Engemann (Roche), started in October 2021
 - Maria Sayu Yamamoto, ANR UDOPIA-DATAIA grant at Université Paris-Saclay, _"Similarity-based Classification with Riemannian methods for high dimensional EEG"_, 50% supervision with Florian Yger, started in March 2021
 - Isabelle Hoxa, ministerial grant (MESRI) in Université Paris-Saclay,_"Study of EEG anticipatory signals linked to perceptual decision making"_, co-supervision with Michel-Ange Amorim and Arnaud Delorme, started in October 2020 
 - Amina Alaoui-Belghiti, industrial grant (CIFRE) between UVSQ and Nexeya-Hensoldt, _"Analysis and fault prediction: toward an automatic and predictive maintenance"_, 100% supervision, defended in November 2021 (3 years)
