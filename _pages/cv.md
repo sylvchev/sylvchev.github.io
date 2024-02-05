@@ -15,8 +15,9 @@ social: false
 
 Current situation:
 - Full professor (professeur des Universités), Université Paris-Saclay, since 2022
-- Member of [LISN-CNRS](https://www.lisn.upsaclay.fr), joint INRIA team [AO/TAU](https://team.inria.fr/tau2/)
-- Teaching at the Computer Science departement of [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/)
+- Member of [LISN-CNRS](https://www.lisn.upsaclay.fr)
+- Head of [AO team](https://www.lisn.upsaclay.fr/recherche/departements-et-equipes/algorithmes-apprentissage-et-calcul/apprentissage-et-optimisation-2/), joint INRIA team [TAU](https://team.inria.fr/tau2/) (co-head G. Charpiat)
+- Teaching at the Computer Science departement of [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/) and [Master IA](https://www.universite-paris-saclay.fr/formation/master/informatique/m1-artificial-intelligence)
 - PEDR holder since 2016
 
 Past positions:
@@ -31,7 +32,10 @@ Past positions:
 - Moniteur (french TA) in [Computer Science Department of IUT Orsay](http://www.iut-orsay.u-psud.fr/).
 
 PhD supervision:
-- Bruno Aristimunha Pinto, cotutella with UFABC (Brazil), _"Deep learning for electroencephalography"_, 30% co-supervision with Marie-Constance Corsi (Inria, Paris Brain Institute) and Raphael Y. de Camargo (UFABC, Brazil), started in october 2023
+- Sébastien Velut, ANR grant, _"Understanding and handling the intra-user variability in passive and reactive BCI"_, 50% co-supervision with Frederic Dehais (Supaero, Toulouse) and Marie-Constance Corsi (Inria, Paris Brain Institute), started in November 2023.
+- Thibault de Surrel de Saint Julien, ANR Grant, _"Learning context invariant representation in EEG data"_, co-supervision with Florian Yger (LAMSADE, PSL) and Fabien Lotte (Inria, Bordeaux) started in November 2023.
+- Bruno Aristimunha Pinto, cotutella with UFABC (Brazil), _"Deep learning for electroencephalography"_, 30% co-supervision with Marie-Constance Corsi (Inria, Paris Brain Institute) and Raphael Y. de Camargo (UFABC, Brazil), started in October 2023
+- Manon Verbockhaven, ministerial grant, _"Detecting lack of expressivity of neural achitecture and handling with growing architecture"_, 25% cosupervision with Guillaume Charpiat (Inria TAU, LISN), started in October 2021. 
 - Apolline Mellot, Inria grant, _"Statiscal learning and domain adaption for enhancing the mesurement of cerebral health from M/EEG signal"_, 50% supervision with Alexandre Gramfort (Meta) and Denis Engemann (Roche), started in October 2021
 - Maria Sayu Yamamoto, ANR UDOPIA-DATAIA grant at Université Paris-Saclay, _"Similarity-based Classification with Riemannian methods for high dimensional EEG"_, 50% supervision with Florian Yger, started in March 2021
 - Isabelle Hoxa, ministerial grant (MESRI) in Université Paris-Saclay,_"Study of EEG anticipatory signals linked to perceptual decision making"_, co-supervision with Michel-Ange Amorim and Arnaud Delorme, started in October 2020 
