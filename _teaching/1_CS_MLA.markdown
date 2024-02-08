@@ -21,7 +21,7 @@ Associated exercises in [5]
 
 #### Gradient descent
 
-Class homework
+Computer class in Python, link to the jupyter notebook is given in class.
 
 #### Convex problem
 
