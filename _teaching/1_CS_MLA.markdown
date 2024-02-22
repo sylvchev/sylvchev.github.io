@@ -25,6 +25,8 @@ Computer class in Python, link to the jupyter notebook is given in class.
 
 #### Convex problem
 
+[Slides](https://cirrus.universite-paris-saclay.fr/s/boxX8JXcDat2F2K)
+
 Associated exercises in [3]
 - Ex 2.1, 2.8, 2.12 in Chap 2
 - Ex 3.1, 3.17 in Chap 3
