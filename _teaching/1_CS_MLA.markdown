@@ -7,6 +7,10 @@ img: /assets/img/openscience-ERC.png
 
 ### Courses
 
+#### 2025 Classes
+
+Link for the TP: https://drive.google.com/file/d/1ZVA6B7_7h513Lr2U7MV5kxNRM1A-9Qlj/view?usp=sharing
+
 #### Regression and classification problems
 
 Associated exercises in [1]
