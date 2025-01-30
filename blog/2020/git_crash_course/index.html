@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Sylvain Chevallier | Crash course on git</title>
+  <meta name="description" content="Full professor, [LISN](https://www.lisn.upsaclay.fr/) - [Universite Paris-Saclay](https://www.universite-paris-saclay.fr/) Teaching at [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/) and [Universite Paris-Saclay](https://www.universite-paris-saclay.fr/)
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2020/git_crash_course/">
+  <!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        Sylvain <strong>Chevallier</strong> 
+    </span>
+    
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/"><i class="fa fa-home"></i></a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Notes</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Crash course on git</h1>
+    <p class="post-meta">February 9, 2020</p>
+  </header>
+
+  <article class="post-content">
+    <h3 id="git-basic">Git Basic</h3>
+
+<ul>
+  <li>Initializing a repository in an existing directory: <code class="language-plaintext highlighter-rouge">git init</code>
+</li>
+  <li>Cloning a repository: <code class="language-plaintext highlighter-rouge">git clone git://server/project</code>
+</li>
+</ul>
+
+<p>For Windows user :</p>
+<ul>
+  <li>
+<a href="https://git-cola.github.io/">https://git-cola.github.io/</a> for GUI, or <a href="https://www.gitkraken.com/git-client">https://www.gitkraken.com/git-client</a> for a non-free alternative</li>
+  <li>
+<a href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a> for <code class="language-plaintext highlighter-rouge">git-bash</code>, the command line interface</li>
+</ul>
+
+<h3 id="repository">Repository</h3>
+
+<ul>
+  <li>Two states for files: <strong>tracked</strong> or <strong>untracked</strong>
+</li>
+  <li>Tracked files can be <strong>unmodified</strong>, <strong>modified</strong>, or <strong>staged</strong>.</li>
+  <li>Know the state with: <code class="language-plaintext highlighter-rouge">git status</code>
+</li>
+  <li>Add new file or staged modified files: <code class="language-plaintext highlighter-rouge">git add file</code>
+</li>
+  <li>View diff with: <code class="language-plaintext highlighter-rouge">git diff</code> <img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> It shows the diff between modified and staged files</li>
+  <li>View diff scheduled for commit with: <code class="language-plaintext highlighter-rouge">git diff --cached</code>
+</li>
+  <li>Ignore files by creating a <code class="language-plaintext highlighter-rouge">.gitignore</code>
+</li>
+  <li>Commit wih: <code class="language-plaintext highlighter-rouge">git commit</code>
+</li>
+  <li>Commit by skipping the staging area (aka “commit a la svn”): <code class="language-plaintext highlighter-rouge">git commit -a</code>
+</li>
+  <li>Remove file with: <code class="language-plaintext highlighter-rouge">git rm file</code>, to keep the file on HDD but stop the git tracking <code class="language-plaintext highlighter-rouge">git rm --cached file</code>
+</li>
+  <li>Moving file with: <code class="language-plaintext highlighter-rouge">git mv file</code>
+</li>
+</ul>
+
+<h3 id="git-log">Git log</h3>
+
+<ul>
+  <li>Tree view of your repro: <code class="language-plaintext highlighter-rouge">git log --graph --date-order</code>, or add in your <code class="language-plaintext highlighter-rouge">~/.gitconfig</code> an alias section with
+[alias]
+   lgr = log –graph –date-order –pretty=format:’%Cblue%h %Cgreen%ci %Cred%an, %Cblue%m %Creset%s %Cred%d’</li>
+  <li>Display diff with from 2 commits ago: <code class="language-plaintext highlighter-rouge">git diff HEAD~2 HEAD</code> or <code class="language-plaintext highlighter-rouge">git diff @~2</code> as HEAD is implicit</li>
+  <li>List commit for a specific file: <code class="language-plaintext highlighter-rouge">git log --abbrev-commit myfile</code>
+</li>
+  <li>Coming back in time : <code class="language-plaintext highlighter-rouge">git checkout commit-hash</code>, detaching HEAD. You could come back to the topmost commit of your branch with <code class="language-plaintext highlighter-rouge">git switch -</code>
+</li>
+</ul>
+
+<h3 id="undoing-things">Undoing things</h3>
+
+<ul>
+  <li>Changin last commit: <code class="language-plaintext highlighter-rouge">git commit --amend</code>
+</li>
+  <li>Unstaging a file with: <code class="language-plaintext highlighter-rouge">git reset HEAD file</code>
+</li>
+  <li>Unmodifying a file (aka svn revert): <code class="language-plaintext highlighter-rouge">git checkout -- file </code>
+</li>
+</ul>
+
+<h3 id="working-with-remote">Working with remote</h3>
+
+<ul>
+  <li>Show the remote with: <code class="language-plaintext highlighter-rouge">git remote</code> or <code class="language-plaintext highlighter-rouge">git remote -v</code>
+</li>
+  <li>Adding a remote repository with: <code class="language-plaintext highlighter-rouge">git remote add [shortname] [url]</code>
+</li>
+</ul>
+
+<h3 id="tagging">Tagging</h3>
+
+<ul>
+  <li>Show existing tags: <code class="language-plaintext highlighter-rouge">git tag</code>
+</li>
+  <li>Add a new tag: <code class="language-plaintext highlighter-rouge">git tag -a tagname -m "Message"</code>
+</li>
+  <li>Sharing one tag: <code class="language-plaintext highlighter-rouge">git push origin [tagname]</code> or all tags: <code class="language-plaintext highlighter-rouge">git push origin --tags</code>
+</li>
+  <li>Get tags from remote: <code class="language-plaintext highlighter-rouge">git fetch --all --tags --prune</code> and checkout to the desired tags: <code class="language-plaintext highlighter-rouge">git checkout tags/&lt;tag_name&gt; -b &lt;branch_name&gt;</code>
+</li>
+</ul>
+
+<h3 id="branching-and-merging">Branching and merging</h3>
+
+<ul>
+  <li>Create a branch: <code class="language-plaintext highlighter-rouge">git branch [branchname]</code>
+</li>
+  <li>Switch to branch: <code class="language-plaintext highlighter-rouge">git checkout [branchname]</code>
+</li>
+  <li>Create and switch with <code class="language-plaintext highlighter-rouge">git checkout -b [branchname]</code>
+</li>
+  <li>Delete branch: <code class="language-plaintext highlighter-rouge">git branch -d [branchname]</code>
+</li>
+  <li>Merge with branch: <code class="language-plaintext highlighter-rouge">git merge [branchname]</code>, solve conflict with <code class="language-plaintext highlighter-rouge">git mergetool</code>
+</li>
+</ul>
+
+<h3 id="remote-branches">Remote branches</h3>
+
+<ul>
+  <li>Remote branches are readonly and denoted (remote)/(branch) instead of (branch) for local branches.</li>
+  <li>Synchronize with remote: <code class="language-plaintext highlighter-rouge">git fetch (remote)</code>, e.g. <code class="language-plaintext highlighter-rouge">git fetch origin</code>
+</li>
+  <li>Push the branch on remote: <code class="language-plaintext highlighter-rouge">git push (remote) (branch)</code>, or <code class="language-plaintext highlighter-rouge">git push (remote) (localBranch:remoteBranch)</code>
+</li>
+  <li>After a <code class="language-plaintext highlighter-rouge">git fetch origin</code> new branches are available that can be merge into current branch with <code class="language-plaintext highlighter-rouge">git merge origin/(branch)</code>, it is also possible to start a local branch with the same name <code class="language-plaintext highlighter-rouge">git checkout -b (branch) (remote)/(branch)</code> or <code class="language-plaintext highlighter-rouge">git checkout --track (remote)/(branch)</code>
+</li>
+  <li>If you forgot to track a remote branch on your local branch, you could use <code class="language-plaintext highlighter-rouge">git branch -u remote/branch</code> to follow the remote branch.</li>
+  <li>Delete a remote branch: <code class="language-plaintext highlighter-rouge">git push [remotename] :[branch]</code>
+</li>
+</ul>
+
+<h3 id="github">GitHub</h3>
+
+<ul>
+  <li>Clone a GitHub repository on your account</li>
+  <li>Clone your remote on local: <code class="language-plaintext highlighter-rouge">git clone https://github.com/username/project.git </code>
+</li>
+  <li>Add the original repository: <code class="language-plaintext highlighter-rouge">git remote add upstream https://github.com/original/project.git</code>
+</li>
+  <li>Create a branch to work: <code class="language-plaintext highlighter-rouge">git checkout -b topic</code>, <code class="language-plaintext highlighter-rouge">git commit</code>
+</li>
+  <li>Merge with upstream: <code class="language-plaintext highlighter-rouge">git fetch upstream</code>, <code class="language-plaintext highlighter-rouge">git checkout master</code>, <code class="language-plaintext highlighter-rouge">git merge upstream/master</code>
+</li>
+</ul>
+
+<h3 id="rebasing">Rebasing</h3>
+
+<ul>
+  <li>Rebase a branch on another: <code class="language-plaintext highlighter-rouge">git rebase [basebranch] [topicbranch]</code>, then <code class="language-plaintext highlighter-rouge">git checkout basebranch</code> and <code class="language-plaintext highlighter-rouge">git merge topicbranch</code>, finally <code class="language-plaintext highlighter-rouge">git branch -d topicbranch</code>
+</li>
+  <li>Rebase a PR branch on newly pushed master: <code class="language-plaintext highlighter-rouge">git checkout mybranch</code>, <code class="language-plaintext highlighter-rouge">git rebase master-upstream</code>, <code class="language-plaintext highlighter-rouge">git merge</code>, <code class="language-plaintext highlighter-rouge">git commit</code>, or more simply <code class="language-plaintext highlighter-rouge">git checkout mybranch</code>, <code class="language-plaintext highlighter-rouge">git rebase upstream/master</code>,<code class="language-plaintext highlighter-rouge"> git push -f origin mybranch</code>
+</li>
+  <li>Rebase branch C, branched from B (but independent from it), on branch A:  <code class="language-plaintext highlighter-rouge">git rebase --onto A B C</code>
+</li>
+  <li><strong>Do not rebase commits that you have pushed to a public repository if your are on a public branch</strong></li>
+</ul>
+
+<h3 id="tips-and-tricks">Tips and tricks</h3>
+
+<ul>
+  <li>Use bash completion for git : use zsh, or else download <a href="https://github.com/git/git/blob/master/contrib/completion/git-completion.bash">https://github.com/git/git/blob/master/contrib/completion/git-completion.bash</a> and source it : <code class="language-plaintext highlighter-rouge">source ~/git-completion.bash</code>.</li>
+  <li>Use global aliases : <code class="language-plaintext highlighter-rouge">git config --global alias.co checkout</code>, <code class="language-plaintext highlighter-rouge">git config --global alias.ci commit</code> and <code class="language-plaintext highlighter-rouge">git config --global alias.st status</code>
+</li>
+  <li>Exporting to zip : <code class="language-plaintext highlighter-rouge">git archive --format zip --output /full/path/to/zipfile.zip master</code> or <code class="language-plaintext highlighter-rouge">git archive master | zip &gt; myarchive.zip</code>
+</li>
+  <li>Remove file from git but keep it on the disk : <code class="language-plaintext highlighter-rouge">git rm --cached file1.txt</code>
+</li>
+  <li>my .gitconfig file is available on <a href="https://gist.github.com/sylvchev/14283580f189e318aabefb566248ad86">gist</a>
+</li>
+  <li>To store credential in https: <code class="language-plaintext highlighter-rouge">git config credential.helper store</code>, then your command, like <code class="language-plaintext highlighter-rouge">git pull</code>, and <code class="language-plaintext highlighter-rouge">git config --global credential.helper 'cache --timeout=6400'</code>
+</li>
+  <li>Check for whitespace commit: <code class="language-plaintext highlighter-rouge">git diff --check</code>
+</li>
+</ul>
+
+<h3 id="links">Links</h3>
+
+<ul>
+  <li>
+<a href="http://git-scm.com/book/en/">ProGit</a>, a complete book, this is a must-read.</li>
+  <li>
+<a href="https://learngitbranching.js.org/">Learn Git Branching</a>, an incredible tutorial, with realistic environment in your browser!</li>
+  <li>
+<a href="http://nyuccl.org/pages/GitTutorial/">Git tutorial for scientist</a>, nice figures and very useful</li>
+  <li>GitHub help on <a href="https://help.github.com/articles/fork-a-repo">how to fork a repo</a> and <a href="https://help.github.com/articles/syncing-a-fork">syncing a fork</a>
+</li>
+  <li>
+<a href="https://github.com/git-game/git-game-v2">Git-game v2</a>, a game to learn command line git.</li>
+  <li>
+<a href="https://www.atlassian.com/git/tutorials">Become a git guru</a>, another tutorial with nice figures.</li>
+</ul>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    © Copyright 2025 Sylvain Chevallier.
+    
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+
+
+<!-- Load MathJax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-15576823-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>

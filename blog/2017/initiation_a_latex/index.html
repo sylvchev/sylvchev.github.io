@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Sylvain Chevallier | Initiation à LaTeX</title>
+  <meta name="description" content="Full professor, [LISN](https://www.lisn.upsaclay.fr/) - [Universite Paris-Saclay](https://www.universite-paris-saclay.fr/) Teaching at [IUT d'Orsay](https://www.iut-orsay.universite-paris-saclay.fr/) and [Universite Paris-Saclay](https://www.universite-paris-saclay.fr/)
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2017/initiation_a_latex/">
+  <!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        Sylvain <strong>Chevallier</strong> 
+    </span>
+    
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/"><i class="fa fa-home"></i></a>
+
+        <!-- Pages -->
+        
+          
+        
+          
+            <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+            <a class="page-link" href="/publications/">Publications</a>
+          
+        
+          
+            <a class="page-link" href="/teaching/">Teaching</a>
+          
+        
+          
+        
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">Notes</a>
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Initiation à LaTeX</h1>
+    <p class="post-meta">January 18, 2017</p>
+  </header>
+
+  <article class="post-content">
+    <h3 id="logiciels">Logiciels</h3>
+<p><strong>Windows</strong></p>
+<ul>
+  <li>Il y a <a href="http://miktex.org/">MikTeX</a>, la distribution LaTeX la plus répandue. Elle est utilisée par beaucoup d’environnements ou IDE LaTeX.</li>
+  <li>Un bon IDE est <a href="http://www.xm1math.net/texmaker/">TeXmaker</a>, qui s’installe facilement. Attention, n’oubliez pas d’installer MikTeX pour que TeXmaker fonctionne correctement.</li>
+  <li>Avec MikTex, vous pouvez utiliser votre éditeur de texte favori et compiler en ligne de commande</li>
+</ul>
+
+<p><strong>Linux</strong></p>
+<ul>
+  <li>La distribution LaTeX de référence est Texlive, elle est installée par défaut sur Ubuntu et sur bon nombre de distribution</li>
+  <li>Un bon éditeur est <a href="https://kde.org/applications/office/org.kde.kile">Kile</a> sur Kde, pour Ubuntu/Gnome il y a <a href="http://projects.gnome.org/latexila/">Latexila</a>.</li>
+</ul>
+
+<p><strong>Mac</strong></p>
+<ul>
+  <li>La suite <a href="http://pages.uoregon.edu/koch/texshop/">TeXshop</a> semble être la référence, elle est installée de base avec la distribution Texlive.</li>
+  <li>L’installeur <a href="http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg">MacTeX</a> se charge d’installer TeXlive et TeXshop</li>
+  <li>Un bon résumé est <a href="http://macdevcenter.com/pub/a/mac/2004/02/03/latex.html">disponible ici</a></li>
+</ul>
+
+<h3 id="pour-commencer">Pour commencer</h3>
+<p>Vous pouvez copier-coller ces quelques lignes et compléter les blancs comme bon vous semble :</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\documentclass</span><span class="na">[a4paper,11pt]</span><span class="p">{</span>article<span class="p">}</span>
+
+<span class="k">\usepackage</span><span class="p">{</span>times<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>textcomp<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>amssymb,amsmath,amsfonts<span class="p">}</span>
+<span class="c">% si latex se plaint, commenter la ligne suivante et décommenter la ligne d'après</span>
+<span class="k">\usepackage</span><span class="na">[latin1]</span><span class="p">{</span>inputenc<span class="p">}</span>
+<span class="c">% \usepackage[utf8]{inputenc}</span>
+<span class="k">\usepackage</span><span class="na">[T1]</span><span class="p">{</span>fontenc<span class="p">}</span>
+<span class="k">\usepackage</span><span class="na">[francais]</span><span class="p">{</span>babel<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+
+<span class="k">\date</span><span class="p">{</span><span class="k">\today</span><span class="p">}</span>
+<span class="k">\title</span><span class="p">{</span>Titre<span class="p">}</span>
+<span class="k">\author</span><span class="p">{</span>auteur<span class="p">}</span>
+<span class="k">\maketitle</span>
+
+<span class="k">\section</span><span class="p">{</span>Un titre<span class="p">}</span>
+<span class="k">\label</span><span class="p">{</span>premier<span class="p">}</span>
+
+<span class="k">\subsection</span><span class="p">{</span>Un sous-titre<span class="p">}</span>
+<span class="k">\label</span><span class="p">{</span>st<span class="p">}</span>
+
+votre texte
+
+<span class="k">\bibliography</span><span class="p">{</span>&lt;mettre le nom de votre fichier bib&gt;<span class="p">}</span>
+<span class="k">\bibliographystyle</span><span class="p">{</span>plain<span class="p">}</span>
+<span class="nt">\end{document}</span></code></pre></figure>
+
+<h3 id="canevas-latex-pour-une-thèse">Canevas latex pour une thèse</h3>
+
+<p>Voici une archive qui contient un style possible pour la thèse, qui n’attend que vous pour être amélioré et diffusé plus largement. Vous pouvez le télécharger ici: <a href="https://github.com/sylvchev/latex-template-uvsq-saclay">https://github.com/sylvchev/latex-template-uvsq-saclay</a></p>
+
+<h3 id="canevas-beamer-pour-une-présentation">Canevas Beamer pour une présentation</h3>
+
+<p>Pour faire une présentation aux couleurs du laboratoire et de l’Université, voici un canevas latex qui utilise le package beamer pour générer des diapositives. Le fichier sera disponible bientôt.</p>
+
+<h3 id="documents-et-liens">Documents et liens</h3>
+
+<p>Il y au moins un livre sur latex à la bibliothèque et beaucoup sur internet. Certains sont disponible gratuitement sur le site de <a href="http://www.latex-project.org/">LaTeX</a>.</p>
+
+<p><strong>Des documents utiles</strong></p>
+<ul>
+  <li>Un <a href="https://tex.loria.fr/general/aide-memoire-latex-seguin1998.pdf">aide mémoire</a> bien pratique</li>
+  <li>Un <a href="https://www.ntg.nl/doc/bayart/lxmanuel.pdf">document de référence</a>, issu de l’ESIEE, très complet, très bien expliqué.</li>
+  <li>Un <a href="http://www-hep.colorado.edu/~jcumalat/4610_fall_10/bibtex_guide.pdf">petit résumé</a> fonctionnement de Bibtex</li>
+  <li>Un <a href="http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf">document</a> apprendre à bien utiliser Bibtex</li>
+</ul>
+
+<p><strong>Some useful links</strong></p>
+<ul>
+  <li><a href="http://en.wikibooks.org/wiki/LaTeX">Latex wiki</a>, a good online guide. Easy to search and contains several examples.</li>
+  <li><a href="https://www.writelatex.com/examples">Online example</a> includes several templates. It is possible to create  a document online, compile and view it.</li>
+</ul>
+
+<h3 id="des-outils-de-conversions">Des outils de conversions</h3>
+
+<p>Il est possible de convertir des documents LaTeX en documents office ou en HTML.
+Malheureusement, ces convertisseurs sont assez sensibles (des fois ils ne fonctionnent pas) et peuvent donner des mises en formes très différentes. Je ne sais pas comment ils fonctionnent pour les maths et si les équations sont bien rendues. J’ai eu pas mal de soucis à les utiliser, je viens d’essayer de convertir un document LaTeX avec des équations que j’utilise à l’IUT mais je n’ai pas réussi à le convertir. La page du convertisseur est ici :
+<a href="https://www.tug.org/tex4ht/">https://www.tug.org/tex4ht/</a> avec des explications relativement claires ici <a href="https://github.com/michal-h21/helpers4ht/wiki/tex4ht-tutorial">https://github.com/michal-h21/helpers4ht/wiki/tex4ht-tutorial</a></p>
+
+<p>Une fois qu’il est installé, il est possible de convertir le document latex avec la commande :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mk4ht oolatex fichier_latex.tex
+</code></pre></div></div>
+
+<p>Il sera sans doute nécessaire de modifier largement le fichier latex pour que la conversion fonctionne. 
+Il existe d’autres possibilité, comme simplement copier/coller le latex dans document office et enlever les balises LaTeX. Ces possibilités sont explorées ici : <a href="http://www.tug.org/utilities/texconv/textopc.html">http://www.tug.org/utilities/texconv/textopc.html</a> et là <a href="https://en.wikibooks.org/wiki/LaTeX/Export_To_Other_Formats#Convert_to_RTF">https://en.wikibooks.org/wiki/LaTeX/Export_To_Other_Formats#Convert_to_RTF</a></p>
+
+<p>J’ai essayé latex2rtf pour générer un fichier RTF, les maths ne passent pas mais j’ai obtenu un résultat exploitable avec :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdflatex mon_fichier.tex &amp;&amp; latex2rtf mon_fichier.tex
+</code></pre></div></div>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div class="wrapper">
+    &copy; Copyright 2025 Sylvain Chevallier.
+    
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+
+
+<!-- Load MathJax -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-15576823-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
