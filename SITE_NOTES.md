@@ -67,14 +67,48 @@ Ongoing (September 2026):
 - [ ] CI cleanup: upstream workflows `unit-tests`, `prettier-comment-on-pr`, `visual-regression`, `codeql`, `copilot-setup-steps`, `update-tocs` and `render-cv` run on this repo and are useless or failing here. Proposed: delete them, keep `deploy`, `prettier`, `upgrade-check`, `update-citations`.
 - [ ] Delete the `site-v1` branch once `main` is settled.
 
-Ideas and future changes:
+Sylvain's tasks (requested 2026-09-24). Work on a branch, build with Docker, run Prettier, and show the result before pushing to `main`:
 
-- [ ] Update the "Short version" of `_pages/cv.md` from the CV's header (positions, team role: the January 2024 news says co-leader of AO/TAU, the page says head of AO).
+1. [ ] **Update the news.**
+   - Start from the 9 drafts above.
+   - Then add items for publications since 2024 that have no news yet: list the 2024+ entries of `papers.bib` and compare them with `_news/`. Candidates: `velut2026tackling` (IJCNN), `lopes2026learning` (Scientific Reports), `velut2026neurophysiological` (Imaging Neuroscience), `surrel2025geometry` (TMLR), `douka2025growth` (ESANN), `tangermann2025learning` (JNE).
+   - Style: 1 or 2 sentences, `layout: post`, `inline: true`, a link to HAL or the DOI.
+   - Check every date and fact with Sylvain or a source. No gendered pronouns.
+   - Idea: make `sync_cv.py` print new CV publications that have no news yet.
+2. [ ] **Badges and thumbnails on the publications page.**
+   - al-folio v1 already supports:
+     - `abbr` (a venue badge; its colour and link come from `_data/venues.yml`)
+     - `preview` (an image in `assets/img/publication_preview/`)
+     - altmetric, Dimensions and Google Scholar badges (`enable_publication_badges` is on; they need `doi`, `altmetric` or `google_scholar_id` fields)
+     - `code`, `pdf`, `slides` buttons
+   - `papers.bib` is generated, so do not edit it. Instead, add a hand-edited file (for example `_data/publication_extras.yml`, keyed by bib key) that `sync_cv.py` merges into the bib.
+   - Derive `abbr` automatically from `booktitle`/`journal`, for example NeurIPS, ICML, JNE, TMLR.
+   - Thumbnails: ask Sylvain for figures, or propose one figure per selected or recent paper taken from its HAL/arXiv PDF (check the licence). Start with the 5 selected papers and the 2024+ ones.
+3. [ ] **Fill the project pages from Sylvain's papers and projects.**
+   - The current `_projects/` pages date from about 2020.
+   - Propose a new set of themes, each with a short text, a figure and its publications (`related_publications: true` plus `{% cite key %}`, or a filtered `{% bibliography %}`). Possible themes:
+     - Riemannian BCI and pyRiemann
+     - neural network growth (MANOLO; Verbockhaven, Douka, Rudkiewicz)
+     - deep learning for EEG and Braindecode (Aristimunha)
+     - domain adaptation and brain health (Mellot, de Surrel)
+     - benchmarks and MOABB
+     - data challenges and Codabench
+     - the DeMythif.AI COFUND program
+   - Consider project categories (`enable_project_categories`), for example "current" and "past".
+   - Ask Sylvain which old projects to keep, archive or delete before rewriting.
+4. [ ] **Update the CV page.**
+   - Refresh the "Short version" of `_pages/cv.md` from the header of the CV `.tex`: positions, team role (the January 2024 news says co-leader of AO/TAU; the page says head of AO), responsibilities, funded projects, teaching.
+   - The supervision part is already generated: keep it.
+   - If more sections are worth generating (projects, responsibilities), read them from the CV repo through `sync_cv.py`, not by copying text.
+5. [ ] **List more repositories** in `_data/repositories.yml`.
+   - Now listed: moabb, pyRiemann, codabench, mdla.
+   - Candidates: the `soft` entries of the CV bib (for example Braindecode), repos Sylvain contributes to (pymanopt, geomstats; see the about page), and Sylvain's own repos (`gh repo list sylvchev`).
+   - Propose a list and let Sylvain choose.
+
+Smaller ideas:
+
 - [ ] Add `hal_id: sylvain-chevallier` to `_data/socials.yml` (HAL icon, supported by jekyll-socials).
-- [ ] Use `sync_cv.py` to also flag new CV publications that could become news items.
 - [ ] Publication style: now `apa`; the old site used `frontiers-in-bioscience`.
-- [ ] Refresh the project pages (last updated around 2020): MANOLO, DeMythif.AI, neural network growth.
-- [ ] Add Sylvain's own items here.
 
 ## Done
 
