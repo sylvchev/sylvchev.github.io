@@ -2,14 +2,19 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Some courses I taught (mostly in French)
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 3
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
-
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-
-{% include courses.liquid %}
+<!-- Course pages are plain pages (layout: page) shown as cards, like projects.
+     To use the v1 course layout instead (schedule tables, grouping by year),
+     see "Creating a teachings collection" in docs/CUSTOMIZE.md. -->
+<div class="projects">
+{% assign sorted_courses = site.teachings | sort: "importance" %}
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for project in sorted_courses %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>

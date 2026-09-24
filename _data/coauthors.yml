@@ -1,34 +1,51 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"yger":
+  - firstname: ["Florian", "F."]
+    url: http://www.yger.fr/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"kalunga":
+  - firstname: ["Emmanuel", "E.", "Emmanuel K", "Emmanuel K.", "E. K."]
+    url: https://www.linkedin.com/in/emmanuel-k-kalunga/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"massart":
+  - firstname: ["Estelle", "E.", "Estelle M", "Estelle M."]
+    url: https://www.maths.ox.ac.uk/people/estelle.massart
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"zammouri":
+  - firstname: ["Amin", "A."]
+    url: http://azammouri.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"corsi":
+  - firstname: ["Marie-Constance", "M.-C.", "M. C."]
+    url: https://marieconstance-corsi.netlify.app
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"de vico fallani":
+  - firstname: ["Fabrizio", "F."]
+    url: https://sites.google.com/site/devicofallanifabrizio/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"lotte":
+  - firstname: ["Fabien", "F."]
+    url: https://sites.google.com/site/fabienlotte/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"azabou":
+  - firstname: ["Eric", "Éric", "E.", "É."]
+    url: https://www.2i.uvsq.fr/m-eric-azabou
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"amorim":
+  - firstname: ["Michel-Ange", "Michel Ange", "M.-A.", "M. A."]
+    url: https://www.faculte-sciences-sport.universite-paris-saclay.fr/michel-ange-amorim
+
+"delorme":
+  - firstname: ["Arnaud", "A."]
+    url: https://arnauddelorme.com/
+
+"sra":
+  - firstname: ["Suvrit", "S."]
+    url: https://idss.mit.edu/staff/suvrit-sra-2/
+
+"bao":
+  - firstname: ["Guillaume", "G."]
+    url: https://www.linkedin.com/in/guillaume-bao-1aa8b8b8/?originalSubdomain=fr
+
+"clisson":
+  - firstname: ["Pierre", "P."]
+    url: https://clisson.com/
