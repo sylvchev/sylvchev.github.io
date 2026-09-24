@@ -6,6 +6,6 @@ scholar_userid: j5Tu_SQAAAAJ # your Google Scholar ID
 orcid_id: 0000-0003-3027-8241 # your ORCID ID
 github_username: sylvchev # your GitHub user name
 linkedin_username: sylvain-chevallier-646879171 # your LinkedIn user name
-x_username: sylvcheva # your X (formerly Twitter) handle
+# bluesky_url: https://bsky.app/profile/YOUR-HANDLE # your Bluesky profile
 cv_pdf: /cv/cv.pdf # path to your CV PDF file
 rss_icon: true # comment this line to hide the RSS icon

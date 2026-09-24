@@ -238,6 +238,7 @@ exclude:
   - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
+  - SITE_NOTES.md
   - readme_preview/
   - gems/
   - migrations/
@@ -392,20 +393,29 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     blog,
+    citations,
     code,
+    core,
     dimensions,
+    domain,
+    downloads,
     eprint,
     google_scholar_id,
     hal,
     html,
     inspirehep_id,
+    keywords,
     pdf,
     pmid,
     poster,
+    qualis,
+    quartile,
     preview,
     selected,
     slides,
+    students,
     supp,
+    venueaddr,
     video,
     website,
   ]

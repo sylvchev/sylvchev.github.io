@@ -14,7 +14,7 @@ profile:
     <p>91190 Gif-sur-Yvette - FRANCE</p>
     <p>Ph: +33/01 69 15 62 85</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
