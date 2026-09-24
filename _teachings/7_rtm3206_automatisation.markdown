@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RTM3206
-description:  Automatisation des tâches d'administration 
+description: Automatisation des tâches d'administration
 importance: 7
 img: assets/img/forked.png
 ---

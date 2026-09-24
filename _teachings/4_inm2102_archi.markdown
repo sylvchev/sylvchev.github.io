@@ -1,7 +1,7 @@
 ---
 layout: page
 title: INM2101
-description: Architecture matérielle 
+description: Architecture matérielle
 importance: 4
 img: assets/img/shenzhenio.jpg
 ---

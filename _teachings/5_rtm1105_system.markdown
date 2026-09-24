@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RTM1105
-description: Bases du système d'exploitation 
+description: Bases du système d'exploitation
 importance: 5
 img: assets/img/bashtricks-juliaevans.jpg
 ---
@@ -18,4 +18,3 @@ Cours de système du département RT
 1. Les logiciels libres
 
 Les cours, TD, TP et capsules videos sont disponibles en ligne sur le [Moodle](https://moodle.uvsq.fr/moodle/course/view.php?id=383)
-

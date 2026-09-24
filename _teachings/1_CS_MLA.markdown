@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computer Science Master - AI - 
+title: Computer Science Master - AI -
 description: Machine Learning Algorithms
 importance: 1
 img: assets/img/openscience-ERC.png
@@ -15,12 +15,14 @@ Link for the TP: https://drive.google.com/file/d/1ZVA6B7_7h513Lr2U7MV5kxNRM1A-9Q
 #### Regression and classification problems
 
 Associated exercises in [1]
-- Ex 1, 4 and 5  Chap 3.7
+
+- Ex 1, 4 and 5 Chap 3.7
 - Ex 1 and 2 Chap 4.7
 
-####  PAC learning theory
+#### PAC learning theory
 
 Associated exercises in [5]
+
 - Ex 1, 2 and 3, Chap 3.5
 - Ex 2 and 3, Chapt 6.8
 
@@ -33,9 +35,9 @@ Computer class in Python, link to the jupyter notebook is given in class.
 [Slides](https://cirrus.universite-paris-saclay.fr/s/boxX8JXcDat2F2K)
 
 Associated exercises in [3]
+
 - Ex 2.1, 2.8, 2.12 in Chap 2
 - Ex 3.1, 3.17 in Chap 3
-
 
 ### Evaluation
 
@@ -55,4 +57,3 @@ Associated exercises in [3]
 - [6] Hastie, T., Tibshirani, R., Friedman, J. H., & Friedman, J. H. (2009). _The elements of statistical learning: data mining, inference, and prediction_. New York: Springer.
 - [7] Bertsekas, D. (2009). _Convex optimization theory_(Vol. 1). Athena Scientific.
 - [8] Bubeck, S. (2015). _Convex optimization: Algorithms and complexity_. Foundations and Trends in Machine Learning, 8(3-4), 231-357.
-

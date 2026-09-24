@@ -22,4 +22,3 @@ This page will explain the ongoing works on transfer learning for BCI.
 <div class="caption">
     Results for minimum distance to pooled mean with Euclidean distance and Riemannian distance. On rightmost plot, the results for MDWM.
 </div>
-

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: INM1101 
-description: Introduction aux systèmes informatiques 
+title: INM1101
+description: Introduction aux systèmes informatiques
 importance: 3
 img: assets/img/windows-ai-closecut.png
 ---

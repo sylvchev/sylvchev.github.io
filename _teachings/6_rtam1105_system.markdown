@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RTAM1105
-description: Bases du système d'exploitation 
+description: Bases du système d'exploitation
 importance: 6
 img: assets/img/depressed-developer-21.png
 ---

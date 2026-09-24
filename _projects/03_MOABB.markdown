@@ -8,8 +8,8 @@ img: assets/img/MOABBlogo.png
 
 ### Reproducible research in BCI has a long way to go...
 
--  Unavailable code
--  Exotic data format/language/toolboxes
+- Unavailable code
+- Exotic data format/language/toolboxes
 - Preprocessed data (including errors)
 
 -> No benchmark of BCI algorithms
@@ -21,7 +21,6 @@ img: assets/img/MOABBlogo.png
     </div>
 </div>
 
-
 ### MOABB aims to be the standard benchmark for any new paper
 
 - Comprehensive benchmark of popular BCI algorithm
@@ -29,6 +28,3 @@ img: assets/img/MOABBlogo.png
 - Ranking algorithms with fair evaluations
 
 <img src="{{ site.baseurl }}/assets/img/moabbfaces.jpg" width="200" />
-
-
-

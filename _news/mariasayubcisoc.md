@@ -5,4 +5,3 @@ inline: true
 ---
 
 Maria Sayu Yamamoto obtained the BCI Society Student Award. This award was given for her work as MSc student.
-

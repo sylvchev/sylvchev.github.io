@@ -26,6 +26,7 @@ The Riemannian BCI techniques have demonstrated their benefit on several occasio
 </div>
 
 Classical machine learning pipeline involves 3 steps:
+
 1. Offline model selection: pick best preprocessing and classifier couple
 2. Calibration: Optimize spatial filter for subject’s current session
 3. Training: train classifier on preprocessed calibration data
@@ -38,6 +39,7 @@ Still, these approaches fail for **20% of the subjects** as it could be seen fro
 
 Covariance-based methods are nested in all the above-mentioned approaches for processing EEG signal in BCI.
 While covariance matrices have a specific non-flat geometry, most of the common approaches rely on Euclidean techniques.
+
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/riem_surf_earth.jpg" title="riemannian approach on the surface of the earth" class="img-fluid rounded z-depth-1" %}
@@ -70,39 +72,34 @@ Most of the classical machine learning algorithms are working only in Euclidean 
 
 These classifiers yield state-of-the-art results for BCI [2], [3]
 
-| P300 - Brain Invaders | SSVEP - Exoskeleton | MI - BCI IV 2a |
-| --- | --- | --- |
-| MDM - 89.04% ± 8.79 | MDM - 89.85% ± 8.0 | TSLDA - 70.2% ± 17.1 |
-| SWLDA - 86.08% ± 10.05 | CCA - 87.50% ± 15.1 | CSPLDA - 65.1% ± 17.9 |
-| XDAWN - 86.26% ±9.96 | FBCCA - 87.40% ± 15.7 | SVM - 63.2% ± 15.2 |
+| P300 - Brain Invaders  | SSVEP - Exoskeleton   | MI - BCI IV 2a        |
+| ---------------------- | --------------------- | --------------------- |
+| MDM - 89.04% ± 8.79    | MDM - 89.85% ± 8.0    | TSLDA - 70.2% ± 17.1  |
+| SWLDA - 86.08% ± 10.05 | CCA - 87.50% ± 15.1   | CSPLDA - 65.1% ± 17.9 |
+| XDAWN - 86.26% ±9.96   | FBCCA - 87.40% ± 15.7 | SVM - 63.2% ± 15.2    |
 
 In order to compare existing algorithms, a framework called [MOABB](https://github.com/ NeuroTechX/moabb) allows to download EEG datasets and to evaluate existing classifiers in a few lines of Python. Testing MDM classifier on data from the BCI Competition IV and from paper from Zhou _et al_ is simple as:
 
-{% highlight python %}
+```python
 
 datasets = [BNCI2014001(), Zhou2016()]
 paradigm = LeftRightImagery()
 pipeline = {'MDM': make_pipeline(Covariances('oas'), MDM(metric='riemann'))}
 evaluation = WithinSessionEvaluation(paradigm=paradigm, datasets=datasets, overwrite=True)
-results = evaluation.process(pipelines) 
+results = evaluation.process(pipelines)
 
-{% endhighlight %}
-
+```
 
 More complete examples are available as notebooks from the [MOABB workshop in Graz 2019](https://github.com/plcrodrigues/Workshop-MOABB-BCI-Graz-2019).
 
 ### References
 
-[1]  S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian
-    distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
+[1] S. Chevallier, E. K. Kalunga, Q. Barthélemy, E. Monacelli. "Review of Riemannian
+distances and divergences applied to SSVEP-based BCI", Neuroinformatics, TBP.
 
-[2] M. Congedo, A. Barachant, A. Andreev ,"A New generation of Brain-Computer 
-    Interface Based on Riemannian Geometry", arXiv: 1310.8115, 2013.
+[2] M. Congedo, A. Barachant, A. Andreev ,"A New generation of Brain-Computer
+Interface Based on Riemannian Geometry", arXiv: 1310.8115, 2013.
 
-[3] E. K. Kalunga, S. Chevallier, Q. Barthélemy, K. Djouani, E. Monacelli, 
-    Y. Hamam, "Online SSVEP-based BCI using Riemannian geometry", Neurocomputing, 
-    vol. 191, p. 55-68, 2016.
-
-
-
-
+[3] E. K. Kalunga, S. Chevallier, Q. Barthélemy, K. Djouani, E. Monacelli,
+Y. Hamam, "Online SSVEP-based BCI using Riemannian geometry", Neurocomputing,
+vol. 191, p. 55-68, 2016.

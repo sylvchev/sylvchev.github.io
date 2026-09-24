@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Brain-ventilator interfaces
-description: 
+description:
 importance: 8
 img: assets/img/PER-PPI.png
 ---
