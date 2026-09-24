@@ -58,11 +58,11 @@ Rules:
 
 Ongoing (September 2026):
 
-- [ ] Review the 9 news drafts in `_news/` (uncommitted): `mellotphd`, `yamamotophd`, `neurips2024`, `verbockhavenphd`, `icml2025`, `eegchallenge`, `aristimunhaphd`, `opensource2026`, `phdautumn2026`. They were written from CV data; check the facts, and set the real date in `eegchallenge.md` (marked TODO).
+- [ ] Review the 14 news drafts in `_news/` (uncommitted): `cortico2026keynote`, `practicalmeeg2025`, `eegemgchallenge2026`, `mellotprize`, `eegchallenge2025results`, `mellotphd`, `yamamotophd`, `neurips2024`, `verbockhavenphd`, `icml2025`, `eegchallenge`, `aristimunhaphd`, `opensource2026`, `phdautumn2026`. They were written from CV data; check the facts.
 - [ ] Commit the CV repo change: `*_en` fields in `data/supervision.yml` and a note in `design.md` (uncommitted in `~/admin/CV/CVadmin/CV_2026`).
 - [ ] Run `make` in the CV repo, then `uv run bin/sync_cv.py` again. The PDF is identical, but the script warns because `supervision.yml` is newer than the PDF.
-- [ ] Bluesky: set `bluesky_url` in `_data/socials.yml` (handle not provided yet).
-- [ ] Email in `_data/socials.yml` is still `sylvain.a.chevallier@inria.fr`; confirm or switch to the Paris-Saclay address.
+- [x] Bluesky: `bluesky_url` set to `sylvchev.bsky.social` (confirmed by Sylvain).
+- [x] Email: keep `sylvain.a.chevallier@inria.fr` in `_data/socials.yml` (confirmed by Sylvain).
 - [ ] `extra.bib`: `hoxha_eeg_2023` (bioRxiv) looks like the preprint of `hoxha2026modality` (Neuropsychologia); remove it if so. Decide whether `delgado_riemann-based_2020` (TNSRE journal article) belongs in the CV bib.
 - [ ] CI cleanup: upstream workflows `unit-tests`, `prettier-comment-on-pr`, `visual-regression`, `codeql`, `copilot-setup-steps`, `update-tocs` and `render-cv` run on this repo and are useless or failing here. Proposed: delete them, keep `deploy`, `prettier`, `upgrade-check`, `update-citations`.
 - [ ] Delete the `site-v1` branch once `main` is settled.
