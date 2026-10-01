@@ -23,6 +23,7 @@ The repo is a fork of al-folio, migrated in September 2026 to the v1 starter. Th
 - **Local preview:** `docker compose up`, then http://localhost:8080. Ruby and Node are not installed on the Mac; everything runs in Docker or through `uv`.
 - **Test build:** `docker run --rm -v "$PWD":/srv/jekyll -w /srv/jekyll amirpourmand/al-folio:latest bash -lc "bundle exec jekyll build --destination /tmp/_site"`
 - **Formatting (CI runs Prettier):** `docker run --rm -v "$PWD":/app -w /app node:20 sh -c "npm ci --ignore-scripts >/dev/null; npx prettier --write <files>"`. Run it on tracked files only, never on `.kilo/`. Use fenced code blocks, not `{% highlight %}`: Prettier strips the indentation inside `highlight` tags.
+- **Publishing content (posts, news, pages):** work on a branch, build and check locally, then squash-merge into `main` locally and push `main` (this deploys). No PR: Sylvain is the only contributor, and the inherited upstream CI checks are meaningless here. Delete the branch afterwards.
 - **Pulling upstream updates:** `git fetch upstream && git merge upstream/main` on a branch, then build, check, and merge into `main`.
 
 ## Sync with the LaTeX CV
@@ -114,4 +115,5 @@ Smaller ideas:
 
 - 2026-09: migrated to the al-folio v1 starter; `main` created and deployed through GitHub Actions to `gh-pages`.
 - 2026-09: content formatted with Prettier; `{% highlight %}` replaced by fenced code blocks.
+- 2026-10-01: blog post "From conda to uv" (`_posts/2026-10-01-conda-to-uv.md`), a cheat sheet in the style of the 2020 git crash course.
 - 2026-09: `bin/sync_cv.py` added; bibliography (122 entries), PhD and intern lists, and CV PDF synced from the LaTeX CV. X link removed; tweet link in `_news/pyriemann0-3.md` replaced by the release notes.
