@@ -47,7 +47,7 @@ torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'linux'" }]
 
 ### conda → uv
 
-| conda                                 | uv                                             |
-| ------------------------------------- | ---------------------------------------------- |
-| `pip install -e ~/src/lib`            | `uv add --editable ~/src/lib`                  |
-| `pip install git+https://…@branch`    | `uv add "lib @ git+https://…" --branch branch` |
+| conda                              | uv                                             |
+| ---------------------------------- | ---------------------------------------------- |
+| `pip install -e ~/src/lib`         | `uv add --editable ~/src/lib`                  |
+| `pip install git+https://…@branch` | `uv add "lib @ git+https://…" --branch branch` |
