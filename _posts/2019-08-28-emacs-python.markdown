@@ -32,26 +32,22 @@ See [Emacs wiki](https://www.emacswiki.org/emacs/PythonProgrammingInEmacs)
 
 ### Keybindings cheatsheet
 
-|----------|------------|---------------------------------|
-| Mode | Keybinding | Description |
-|----------|------------|---------------------------------|
-| anaconda | C-M-i | auto-complete |
-| anaconda | M-. | find definition |
-| anaconda | M-= | show assignement |
-| anaconda | M-r | show all lines containing focus |
-| anaconda | M-? | show doc |
-|----------|------------|---------------------------------|
-| elpy | C-c C-c | send buffer/region to ipython |
-| elpy | C-RET | send line to Ipython |
-| elpy | C-c C-z | switch to ipython/buffer |
-| elpy | C-c C-d | open doc |
-| elpy | C-c C-K | Kill shells |
-|----------|------------|---------------------------------|
-| flycheck | C-c ! l | list all error |
-| flycheck | C-c ! n | next error |
-| flycheck | C-c ! p | prev error |
-| flycheck | C-c ! s | select checker |
-|----------|------------|---------------------------------|
+| Mode     | Keybinding | Description                     |
+| -------- | ---------- | ------------------------------- |
+| anaconda | C-M-i      | auto-complete                   |
+| anaconda | M-.        | find definition                 |
+| anaconda | M-=        | show assignement                |
+| anaconda | M-r        | show all lines containing focus |
+| anaconda | M-?        | show doc                        |
+| elpy     | C-c C-c    | send buffer/region to ipython   |
+| elpy     | C-RET      | send line to Ipython            |
+| elpy     | C-c C-z    | switch to ipython/buffer        |
+| elpy     | C-c C-d    | open doc                        |
+| elpy     | C-c C-K    | Kill shells                     |
+| flycheck | C-c ! l    | list all error                  |
+| flycheck | C-c ! n    | next error                      |
+| flycheck | C-c ! p    | prev error                      |
+| flycheck | C-c ! s    | select checker                  |
 
 ### Relevant .emacs snippet
 
